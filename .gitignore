@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+
+# Generated artifacts. The included Chronos/BTC example is explicitly tracked;
+# any additional local datasets remain ignored.
+data/**
+!data/Chronos/
+!data/Chronos/Crypto/
+!data/Chronos/Crypto/BTC/
+!data/Chronos/Crypto/BTC/1d_og/
+!data/Chronos/Crypto/BTC/1d_og/BTC_up.csv
+!data/Chronos/Crypto/BTC/1d_og/BTC_down.csv
+outputs/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.ckpt
+
+# Experiment tracking
+wandb/
+mlruns/
+events.out.tfevents.*
+
+# Authorized local third-party dependency; not redistributed here
+baselines/spci/vendor/
